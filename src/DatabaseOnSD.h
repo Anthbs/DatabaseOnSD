@@ -43,14 +43,21 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define FILE_READ       "r"
 #define FILE_WRITE      "w"
 #define FILE_APPEND     "a"
+
+
+#ifndef CHIP_SELECT_PIN
 #define CHIP_SELECT_PIN  5
+#endif
 
 #else
 
 #define FILE_READ       O_READ
 #define FILE_WRITE      O_WRITE
 #define FILE_APPEND     O_APPEND
+
+#ifndef CHIP_SELECT_PIN
 #define CHIP_SELECT_PIN  10
+#endif
 
 #endif 
 
