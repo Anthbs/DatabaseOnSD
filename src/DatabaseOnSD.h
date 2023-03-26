@@ -50,11 +50,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #endif
 
 #else
-
-#define FILE_READ       O_READ
-#define FILE_WRITE      O_WRITE
-#define FILE_APPEND     O_APPEND
-
 #ifndef CHIP_SELECT_PIN
 #define CHIP_SELECT_PIN  10
 #endif
