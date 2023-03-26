@@ -35,7 +35,7 @@ bool MyTable::SD_begun = false; // track if SD was began
 void MyTable::begin(){
 
   if (!SD_begun) {
-    SD.begin();
+    SD.begin(CHIP_SELECT_PIN);
     SD_begun = true;
   }
    
@@ -50,7 +50,7 @@ void MyTable::begin(int numRows, int numCols){
 
   //begin SD if it has not begun already
   if (!SD_begun) {
-    SD.begin();
+    SD.begin(CHIP_SELECT_PIN);
     SD_begun = true;
   }
    
